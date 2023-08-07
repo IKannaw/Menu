@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-ifo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 25px 0px;
+}
+
+input{
+    width: 190px;
+    margin:0 25px 0 15px;
+    font-family: "Roboto Mono",monospace;
+    background-color:#0080ff;
+    padding: 5px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+::-webkit-calendar-picker-indicator{
+ background-color: #fff;
+ padding: 5px;
+ border-radius: 3px;
+}
+
+#btn-generate{
+    border: none;
+    width: 100px;
+    border:2px solid #0080ff;
+    background: #fff;
+    color: #0080ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#btn-generate:hover{
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-excel{
+    border: none;
+    font-size: 30px;
+    outline:none;
+    background-color: #fff;
+    cursor: pointer;
+    color: green;
+    margin-left: 100px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate Menu</h1>
+      <div class="menu-ifo">
+        <span>Start Date</span>
+        <input type="date" name="" class="mr-5" id="start-date" />
+        <span>End Date</span>
+        <input type="date" name="" id="end-date" />
+        <button id="btn-generate">Generate</button>
+        <div class="check-boxs ms-5">
+          <div class="form-check">
+            <input
+              class="form-check-input mainCurryChecked"
+              name="check"
+              type="checkbox"
+              value="MainCurry"
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Main Curry
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input sideDishChecked"
+              name="check"
+              type="checkbox"
+              value="SideDish"
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Side Dish
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input soupChecked"
+              type="checkbox"
+              name="check"
+              value="Soup"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Soup
+            </label>
+          </div>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Manin Curry</th>
+            <th>Side Dish</th>
+            <th>Soup</th>
+          </tr>
+        </thead>
+        <tbody id="tableRow"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
